@@ -1,6 +1,8 @@
 # ECE532
 ECE532, Winter 2024 semester
 
+![Selfie with the robot](selfie.png)
+
 ## Information
 Our project was developing a search-and-rescue robot, which is guided by audio localization. We used the Nexys 4 DDR FPGA. There are 4 key subsystems in our project:
 
