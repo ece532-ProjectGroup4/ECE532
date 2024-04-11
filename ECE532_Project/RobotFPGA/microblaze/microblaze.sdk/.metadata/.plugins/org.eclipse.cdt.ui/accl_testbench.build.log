@@ -1,0 +1,45 @@
+01:35:13 **** Auto Build of configuration Debug for project accl_testbench ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../accl_testbench_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'fourPointSearch':
+../src/helloworld.c:361:8: warning: unused variable 'inv_fiddle_factor' [-Wunused-variable]
+  float inv_fiddle_factor = 0.0;
+        ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:360:8: warning: unused variable 'fiddle_factor' [-Wunused-variable]
+  float fiddle_factor = 0.0;
+        ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'setup_controller':
+../src/helloworld.c:599:10: warning: unused variable 'y_offset' [-Wunused-variable]
+  int16_t y_offset = *accelPtr  >> 9;
+          ^~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:877:25: warning: unused variable 'stop' [-Wunused-variable]
+     volatile uint32_t * stop;
+                         ^~~~
+../src/helloworld.c:876:25: warning: unused variable 'ptr' [-Wunused-variable]
+     volatile uint32_t * ptr;
+                         ^~~
+../src/helloworld.c:875:23: warning: unused variable 'value1' [-Wunused-variable]
+     volatile uint32_t value1;
+                       ^~~~~~
+../src/helloworld.c:874:23: warning: unused variable 'value' [-Wunused-variable]
+     volatile uint32_t value;
+                       ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: accl_testbench.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../accl_testbench_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "accl_testbench.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: accl_testbench.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size accl_testbench.elf  |tee "accl_testbench.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25316	    324	   3152	  28792	   7078	accl_testbench.elf
+'Finished building: accl_testbench.elf.size'
+' '
+
+01:35:13 Build Finished (took 612ms)
+

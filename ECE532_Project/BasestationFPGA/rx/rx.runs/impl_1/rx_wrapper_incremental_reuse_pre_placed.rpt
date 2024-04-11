@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr  2 18:12:24 2024
+| Host         : josh running 64-bit major release  (build 9200)
+| Command      : report_incremental_reuse -file rx_wrapper_incremental_reuse_pre_placed.rpt
+| Design       : rx_wrapper
+| Device       : xc7a100t
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------
+
+Incremental Implementation Information
+
+Table of Contents
+-----------------
+1. Reuse Summary
+2. Reference Checkpoint Information
+3. Comparison with Reference Run
+4. Non Reuse Information
+
+1. Reuse Summary
+----------------
+
++-------+----------------------+--------------------+--------------------+-------+
+|  Type | Matched % (of Total) | Reuse % (of Total) | Fixed % (of Total) | Total |
++-------+----------------------+--------------------+--------------------+-------+
+| Cells |                99.92 |              99.92 |               0.21 |  7105 |
+| Nets  |                99.83 |              99.68 |               0.00 |  5398 |
+| Pins  |                    - |              99.90 |                  - | 24630 |
+| Ports |                96.29 |              96.29 |              55.55 |    27 |
++-------+----------------------+--------------------+--------------------+-------+
+
+
+2. Reference Checkpoint Information
+-----------------------------------
+
++----------------+------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/utils_1/imports/impl_1/rx_wrapper_routed.dcp |
++----------------+------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+----------------------------+
+|         DCP Information        |            Value           |
++--------------------------------+----------------------------+
+| Vivado Version                 |                    v2018.3 |
+| DCP State                      |                 POST_ROUTE |
+| Recorded WNS                   |                      0.327 |
+| Recorded WHS                   |                      0.057 |
+| Reference Speed File Version   | PRODUCTION 1.23 2018-06-13 |
+| Incremental Speed File Version | PRODUCTION 1.23 2018-06-13 |
++--------------------------------+----------------------------+
+* Recorded WNS/WHS timing numbers are estimated timing numbers. They may vary slightly from sign-off timing numbers.
+
+
+3. Comparison with Reference Run
+--------------------------------
+
++-----------------+---------------------------+---------------------------+---------------------------+
+|                 |          WNS(ns)          |  Runtime(elapsed)(hh:mm)  |    Runtime(cpu)(hh:mm)    |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|      Stage      |  Reference  | Incremental |  Reference  | Incremental |  Reference  | Incremental |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+| synth_design    |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| read_checkpoint |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+4. Non Reuse Information
+------------------------
+
++-----------------------+------+
+|          Type         |   %  |
++-----------------------+------+
+| Non-Reused Cells      | 0.07 |
+|   New                 | 0.07 |
+| Partially reused nets | 0.11 |
+| Non-Reused nets       | 0.20 |
+| Non-Reused Ports      | 3.70 |
++-----------------------+------+
+
+

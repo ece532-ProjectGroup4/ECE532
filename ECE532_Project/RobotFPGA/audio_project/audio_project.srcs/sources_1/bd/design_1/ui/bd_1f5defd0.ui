@@ -1,0 +1,47 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port event_tlast_missing_0 -pg 1 -y 0 -defaultsOSRD
+preplace port m_axis_data_tready_0 -pg 1 -y -80 -defaultsOSRD
+preplace port s_axis_data_tlast_0 -pg 1 -y -100 -defaultsOSRD
+preplace port event_tlast_unexpected_0 -pg 1 -y -20 -defaultsOSRD
+preplace port event_data_out_channel_halt_0 -pg 1 -y 60 -defaultsOSRD
+preplace port event_frame_started_0 -pg 1 -y -40 -defaultsOSRD
+preplace port s_axis_data_tvalid_0 -pg 1 -y -60 -defaultsOSRD
+preplace port aresetn_0 -pg 1 -y 60 -defaultsOSRD
+preplace port event_data_in_channel_halt_0 -pg 1 -y 40 -defaultsOSRD
+preplace port event_status_channel_halt_0 -pg 1 -y 20 -defaultsOSRD
+preplace port m_axis_data_tvalid_0 -pg 1 -y -60 -defaultsOSRD
+preplace port aclk_0 -pg 1 -y 40 -defaultsOSRD
+preplace port s_axis_config_tvalid_0 -pg 1 -y 20 -defaultsOSRD
+preplace port s_axis_data_tready_0 -pg 1 -y -80 -defaultsOSRD
+preplace port m_axis_data_tlast_0 -pg 1 -y -100 -defaultsOSRD
+preplace port s_axis_config_tready_0 -pg 1 -y 120 -defaultsOSRD
+preplace portBus s_axis_config_tdata_0 -pg 1 -y -20 -defaultsOSRD
+preplace portBus m_axis_data_tdata_0 -pg 1 -y -120 -defaultsOSRD
+preplace portBus s_axis_data_tdata_0 -pg 1 -y -120 -defaultsOSRD
+preplace inst xfft_0 -pg 1 -lvl 1 -y -40 -defaultsOSRD
+preplace netloc xfft_0_event_tlast_unexpected 1 1 1 N
+preplace netloc xfft_0_event_frame_started 1 1 1 N
+preplace netloc xfft_0_m_axis_data_tlast 1 1 1 N
+preplace netloc xfft_0_event_data_out_channel_halt 1 1 1 N
+preplace netloc s_axis_config_tvalid_0_1 1 0 1 N
+preplace netloc xfft_0_event_data_in_channel_halt 1 1 1 N
+preplace netloc m_axis_data_tready_0_1 1 0 2 -40J -210 380
+preplace netloc xfft_0_s_axis_config_tready 1 0 2 -30 120 NJ
+preplace netloc s_axis_config_tdata_0_1 1 0 1 N
+preplace netloc s_axis_data_tlast_0_1 1 0 1 N
+preplace netloc xfft_0_m_axis_data_tdata 1 1 1 N
+preplace netloc s_axis_data_tvalid_0_1 1 0 1 N
+preplace netloc xfft_0_event_status_channel_halt 1 1 1 N
+preplace netloc xfft_0_event_tlast_missing 1 1 1 N
+preplace netloc xfft_0_m_axis_data_tvalid 1 1 1 N
+preplace netloc aresetn_0_1 1 0 1 N
+preplace netloc aclk_0_1 1 0 1 N
+preplace netloc xfft_0_s_axis_data_tready 1 0 2 -30 -200 390J
+preplace netloc s_axis_data_tdata_0_1 1 0 1 N
+levelinfo -pg 1 -60 180 420 -top -240 -bot 240
+"
+}
+

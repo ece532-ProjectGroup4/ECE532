@@ -1,0 +1,39 @@
+15:09:18 **** Auto Build of configuration Debug for project gyroTest ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gyroTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:22: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define iic_baseAddr 0x40800000
+                      ^
+../src/helloworld.c:88:32: note: in expansion of macro 'iic_baseAddr'
+  ConfigPtr = XIic_LookupConfig(iic_baseAddr);
+                                ^~~~~~~~~~~~
+../src/helloworld.c:137:5: warning: unused variable 'gyroBuffer' [-Wunused-variable]
+  u8 gyroBuffer[12];
+     ^~~~~~~~~~
+../src/helloworld.c:74:8: warning: unused variable 'Index' [-Wunused-variable]
+     u8 Index;
+        ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../gyroTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: gyroTest.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gyroTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "gyroTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gyroTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gyroTest.elf  |tee "gyroTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8320	    344	   3232	  11896	   2e78	gyroTest.elf
+'Finished building: gyroTest.elf.size'
+' '
+
+15:09:19 Build Finished (took 1s.483ms)
+

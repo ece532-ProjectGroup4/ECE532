@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="tx_axi_ethernetlite_0_0_synth_1" LaunchDir="C:/Users/Balaji/Desktop/ece532/newstream/tx/tx.runs/tx_axi_ethernetlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tx_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/Balaji/Desktop/ece532/newstream/tx/tx.runs/tx_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tx_streamer_0_0_synth_1" LaunchDir="C:/Users/Balaji/Desktop/ece532/newstream/tx/tx.runs/tx_streamer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/Balaji/Desktop/ece532/newstream/tx/tx.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="tx_axi_ethernetlite_0_0_synth_1"/>
+		<Parent Id="tx_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="tx_streamer_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

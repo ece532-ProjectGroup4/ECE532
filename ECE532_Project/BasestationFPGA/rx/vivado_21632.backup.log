@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  1 13:34:51 2024
+# Process ID: 21632
+# Current directory: C:/Users/jpzjo/Downloads/newstream/newstream/rx
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20908 C:\Users\jpzjo\Downloads\newstream\newstream\rx\rx.xpr
+# Log file: C:/Users/jpzjo/Downloads/newstream/newstream/rx/vivado.log
+# Journal file: C:/Users/jpzjo/Downloads/newstream/newstream/rx\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Balaji/Desktop/ece532/newstream/rx' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/jpzjo/Downloads/newstream/board_files', nor could it be found using path 'C:/Users/Balaji/Desktop/ece532/board_files'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'rx.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+rx_clk_wiz_0_0
+rx_proc_sys_reset_0_0
+rx_axi_ethernetlite_0_0
+rx_mii_to_rmii_0_0
+
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 813.266 ; gain = 215.297
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns is greater than threshold, current reference dcp will be replaced
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/utils_1/imports/impl_1/rx_wrapper_routed.dcp' with file 'C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/impl_1/rx_wrapper_routed.dcp'.
+INFO: [filemgmt 20-1080] Importing file from 'C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/impl_1/rx_wrapper_routed.dcp' to 'C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/utils_1/imports/impl_1/rx_wrapper_routed.dcp'.
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Apr  1 13:36:37 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/synth_1/runme.log
+[Mon Apr  1 13:36:37 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 1349.773 ; gain = 8.574
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 02:38:25 2024...

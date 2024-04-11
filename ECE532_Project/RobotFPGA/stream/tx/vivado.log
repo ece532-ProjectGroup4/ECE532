@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Wed Mar 20 13:22:26 2024
+# Process ID: 2500
+# Current directory: C:/ECE532/stream/tx
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8748 C:\ECE532\stream\tx\tx.xpr
+# Log file: C:/ECE532/stream/tx/vivado.log
+# Journal file: C:/ECE532/stream/tx\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE532/stream/tx/tx.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Balaji/Desktop/ece532/newstream/tx' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 876.008 ; gain = 252.680
+update_compile_order -fileset sources_1
+open_bd_design {C:/ECE532/stream/tx/tx.srcs/sources_1/bd/tx/tx.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:module_ref:ov7670_controller:1.0 - ov7670_controller_0
+Adding cell -- xilinx.com:module_ref:debounce:1.0 - debounce_0
+Adding cell -- xilinx.com:module_ref:ov7670_capture:1.0 - ov7670_capture_0
+Adding cell -- xilinx.com:ip:axi_ethernetlite:3.0 - axi_ethernetlite_0
+Adding cell -- xilinx.com:ip:mii_to_rmii:2.0 - mii_to_rmii_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- xilinx.com:module_ref:streamer:1.0 - streamer_0
+Adding cell -- xilinx.com:module_ref:packetizer:1.0 - packetizer_0
+Successfully read diagram <tx> from BD file <C:/ECE532/stream/tx/tx.srcs/sources_1/bd/tx/tx.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1664.371 ; gain = 105.035

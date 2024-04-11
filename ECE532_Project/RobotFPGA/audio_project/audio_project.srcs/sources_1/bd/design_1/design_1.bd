@@ -1,0 +1,337 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFDF0FF406AF2CF8D",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xfft_0": ""
+    },
+    "ports": {
+      "s_axis_data_tdata_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "s_axis_data_tlast_0": {
+        "direction": "I"
+      },
+      "s_axis_data_tready_0": {
+        "direction": "O"
+      },
+      "s_axis_data_tvalid_0": {
+        "direction": "I"
+      },
+      "s_axis_config_tdata_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "s_axis_config_tready_0": {
+        "direction": "O"
+      },
+      "s_axis_config_tvalid_0": {
+        "direction": "I"
+      },
+      "aclk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "aresetn_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_aclk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "aresetn_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_axis_data_tdata_0": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axis_data_tlast_0": {
+        "direction": "O"
+      },
+      "m_axis_data_tready_0": {
+        "direction": "I"
+      },
+      "m_axis_data_tvalid_0": {
+        "direction": "O"
+      },
+      "event_frame_started_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "EDGE_RISING",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "event_tlast_unexpected_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "EDGE_RISING",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "event_tlast_missing_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "EDGE_RISING",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "event_status_channel_halt_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "EDGE_RISING",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "event_data_in_channel_halt_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "EDGE_RISING",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "event_data_out_channel_halt_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "EDGE_RISING",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "xfft_0": {
+        "vlnv": "xilinx.com:ip:xfft:9.1",
+        "xci_name": "design_1_xfft_0_0",
+        "parameters": {
+          "aresetn": {
+            "value": "true"
+          },
+          "butterfly_type": {
+            "value": "use_luts"
+          },
+          "implementation_options": {
+            "value": "pipelined_streaming_io"
+          },
+          "input_width": {
+            "value": "9"
+          },
+          "number_of_stages_using_block_ram_for_data_and_phase_factors": {
+            "value": "0"
+          },
+          "output_ordering": {
+            "value": "natural_order"
+          },
+          "rounding_modes": {
+            "value": "truncation"
+          },
+          "scaling_options": {
+            "value": "unscaled"
+          },
+          "target_clock_frequency": {
+            "value": "100"
+          },
+          "target_data_throughput": {
+            "value": "50"
+          },
+          "transform_length": {
+            "value": "64"
+          }
+        }
+      }
+    },
+    "nets": {
+      "s_axis_data_tdata_0_1": {
+        "ports": [
+          "s_axis_data_tdata_0",
+          "xfft_0/s_axis_data_tdata"
+        ]
+      },
+      "s_axis_data_tlast_0_1": {
+        "ports": [
+          "s_axis_data_tlast_0",
+          "xfft_0/s_axis_data_tlast"
+        ]
+      },
+      "xfft_0_s_axis_data_tready": {
+        "ports": [
+          "xfft_0/s_axis_data_tready",
+          "s_axis_data_tready_0"
+        ]
+      },
+      "s_axis_data_tvalid_0_1": {
+        "ports": [
+          "s_axis_data_tvalid_0",
+          "xfft_0/s_axis_data_tvalid"
+        ]
+      },
+      "s_axis_config_tdata_0_1": {
+        "ports": [
+          "s_axis_config_tdata_0",
+          "xfft_0/s_axis_config_tdata"
+        ]
+      },
+      "xfft_0_s_axis_config_tready": {
+        "ports": [
+          "xfft_0/s_axis_config_tready",
+          "s_axis_config_tready_0"
+        ]
+      },
+      "s_axis_config_tvalid_0_1": {
+        "ports": [
+          "s_axis_config_tvalid_0",
+          "xfft_0/s_axis_config_tvalid"
+        ]
+      },
+      "aclk_0_1": {
+        "ports": [
+          "aclk_0",
+          "xfft_0/aclk"
+        ]
+      },
+      "aresetn_0_1": {
+        "ports": [
+          "aresetn_0",
+          "xfft_0/aresetn"
+        ]
+      },
+      "xfft_0_m_axis_data_tdata": {
+        "ports": [
+          "xfft_0/m_axis_data_tdata",
+          "m_axis_data_tdata_0"
+        ]
+      },
+      "xfft_0_m_axis_data_tlast": {
+        "ports": [
+          "xfft_0/m_axis_data_tlast",
+          "m_axis_data_tlast_0"
+        ]
+      },
+      "m_axis_data_tready_0_1": {
+        "ports": [
+          "m_axis_data_tready_0",
+          "xfft_0/m_axis_data_tready"
+        ]
+      },
+      "xfft_0_m_axis_data_tvalid": {
+        "ports": [
+          "xfft_0/m_axis_data_tvalid",
+          "m_axis_data_tvalid_0"
+        ]
+      },
+      "xfft_0_event_frame_started": {
+        "ports": [
+          "xfft_0/event_frame_started",
+          "event_frame_started_0"
+        ]
+      },
+      "xfft_0_event_tlast_unexpected": {
+        "ports": [
+          "xfft_0/event_tlast_unexpected",
+          "event_tlast_unexpected_0"
+        ]
+      },
+      "xfft_0_event_tlast_missing": {
+        "ports": [
+          "xfft_0/event_tlast_missing",
+          "event_tlast_missing_0"
+        ]
+      },
+      "xfft_0_event_status_channel_halt": {
+        "ports": [
+          "xfft_0/event_status_channel_halt",
+          "event_status_channel_halt_0"
+        ]
+      },
+      "xfft_0_event_data_in_channel_halt": {
+        "ports": [
+          "xfft_0/event_data_in_channel_halt",
+          "event_data_in_channel_halt_0"
+        ]
+      },
+      "xfft_0_event_data_out_channel_halt": {
+        "ports": [
+          "xfft_0/event_data_out_channel_halt",
+          "event_data_out_channel_halt_0"
+        ]
+      }
+    }
+  }
+}

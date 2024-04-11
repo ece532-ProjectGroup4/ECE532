@@ -1,0 +1,150 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port PDM_clk_0 -pg 1 -y 200 -defaultsOSRD
+preplace port miso -pg 1 -y 2200 -defaultsOSRD
+preplace port sioc_0 -pg 1 -y 2330 -defaultsOSRD
+preplace port led_16bits -pg 1 -y 560 -defaultsOSRD
+preplace port href_0 -pg 1 -y 1270 -defaultsOSRD
+preplace port i_0 -pg 1 -y 2380 -defaultsOSRD
+preplace port LR_sel_0 -pg 1 -y 220 -defaultsOSRD
+preplace port eth_mdio_mdc -pg 1 -y 1660 -defaultsOSRD
+preplace port mosi -pg 1 -y 2140 -defaultsOSRD
+preplace port clk_100MHz -pg 1 -y 1530 -defaultsOSRD
+preplace port jc -pg 1 -y 900 -defaultsOSRD
+preplace port siod_0 -pg 1 -y 2350 -defaultsOSRD
+preplace port Jd_PWM -pg 1 -y 80 -defaultsOSRD
+preplace port push_buttons_5bits -pg 1 -y 1100 -defaultsOSRD
+preplace port gy_sda -pg 1 -y 1970 -defaultsOSRD
+preplace port eth_rmii -pg 1 -y 1740 -defaultsOSRD
+preplace port gy_scl -pg 1 -y 1950 -defaultsOSRD
+preplace port config_finished_0 -pg 1 -y 2310 -defaultsOSRD
+preplace port pwdn_0 -pg 1 -y 2390 -defaultsOSRD
+preplace port pclk_0 -pg 1 -y 1230 -defaultsOSRD
+preplace port xclk_0 -pg 1 -y 2410 -defaultsOSRD
+preplace port eth_ref_clk -pg 1 -y 2250 -defaultsOSRD
+preplace port reset_0 -pg 1 -y 2370 -defaultsOSRD
+preplace port ss -pg 1 -y 2160 -defaultsOSRD
+preplace port vsync_0 -pg 1 -y 1250 -defaultsOSRD
+preplace port Jc_RX -pg 1 -y 100 -defaultsOSRD
+preplace port PDM_data_0 -pg 1 -y 260 -defaultsOSRD
+preplace port sclk -pg 1 -y 2120 -defaultsOSRD
+preplace port reset -pg 1 -y 1510 -defaultsOSRD
+preplace port uart_rtl_0 -pg 1 -y 1580 -defaultsOSRD
+preplace portBus d_0 -pg 1 -y 1290 -defaultsOSRD
+preplace inst Not_1bit_0 -pg 1 -lvl 10 -y 1960 -defaultsOSRD
+preplace inst ov7670_capture_0 -pg 1 -lvl 6 -y 1410 -defaultsOSRD
+preplace inst audio_axi_v1_0_0 -pg 1 -lvl 6 -y 230 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M_1 -pg 1 -lvl 4 -y 1680 -defaultsOSRD
+preplace inst PmodDHB1_0 -pg 1 -lvl 6 -y 900 -defaultsOSRD
+preplace inst ov7670_controller_0 -pg 1 -lvl 12 -y 2360 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 870 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 12 -y 2040 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 560 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -y 1430 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 6 -y 1100 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 8 -y 1440 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 6 -y 1750 -defaultsOSRD
+preplace inst AccelerometerCtl_0 -pg 1 -lvl 11 -y 2180 -defaultsOSRD
+preplace inst mii_to_rmii_0 -pg 1 -lvl 9 -y 1740 -defaultsOSRD
+preplace inst axi_ethernetlite_0 -pg 1 -lvl 8 -y 1660 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y 1620 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -y 1420 -defaultsOSRD
+preplace inst objectDetection_v1_0_0 -pg 1 -lvl 6 -y 400 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 6 -y 80 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 6 -y 700 -defaultsOSRD
+preplace inst debounce_camera_0 -pg 1 -lvl 11 -y 2370 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 6 -y 1240 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 8 -y 1810 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -y 1590 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y 1490 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 1600 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 1520 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 1500 -defaultsOSRD
+preplace inst packetizer_0 -pg 1 -lvl 7 -y 1470 -defaultsOSRD
+preplace inst TempSensorCtl_0 -pg 1 -lvl 11 -y 1960 -defaultsOSRD
+preplace inst ila_4 -pg 1 -lvl 12 -y 1850 -defaultsOSRD
+preplace netloc AccelerometerCtl_0_ACCEL_X_OUT 1 11 1 3630
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1740
+preplace netloc d_0_1 1 0 6 NJ 1290 200J 1300 NJ 1300 NJ 1300 NJ 1300 1720J
+preplace netloc AccelerometerCtl_0_SCLK 1 11 2 NJ 2120 NJ
+preplace netloc TempSensorCtl_0_ERR_O 1 11 1 3610
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 N
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1770
+preplace netloc MISO_0_1 1 0 11 NJ 2200 NJ 2200 NJ 2200 NJ 2200 NJ 2200 NJ 2200 NJ 2200 NJ 2200 NJ 2200 NJ 2200 NJ
+preplace netloc mii_to_rmii_0_RMII_PHY_M 1 9 4 NJ 1740 NJ 1740 NJ 1740 NJ
+preplace netloc microblaze_0_intc_axi 1 2 4 610 1260 NJ 1260 NJ 1260 1720
+preplace netloc microblaze_0_dlmb_1 1 4 1 N
+preplace netloc rst_clk_wiz_1_100M_1_peripheral_aresetn 1 4 6 1390 490 1820 1830 NJ 1830 2540J 1300 NJ 1300 3080J
+preplace netloc xlconcat_0_dout 1 6 7 2140 1270 NJ 1270 NJ 1270 NJ 1270 NJ 1270 NJ 1270 3900
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 610 1530 880J
+preplace netloc axi_gpio_0_GPIO 1 6 7 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ
+preplace netloc audio_axi_v1_0_0_LR_sel 1 6 7 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 NJ
+preplace netloc ov7670_capture_0_dout 1 6 2 2150J 1360 2570
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 620J 1550 860J 1580 1410
+preplace netloc Jc_RX_1 1 0 6 NJ 100 NJ 100 NJ 100 NJ 100 NJ 100 1840
+preplace netloc audio_axi_v1_0_0_PDM_clk 1 6 7 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc PDM_data_0_1 1 0 6 NJ 260 NJ 260 NJ 260 NJ 260 NJ 260 NJ
+preplace netloc microblaze_0_ilmb_1 1 4 1 N
+preplace netloc microblaze_0_axi_periph_M08_AXI 1 5 1 1740
+preplace netloc ov7670_capture_0_we 1 6 2 2180J 1370 2550
+preplace netloc vsync_0_1 1 0 6 NJ 1250 220J 1270 NJ 1270 NJ 1270 NJ 1270 1760J
+preplace netloc microblaze_0_interrupt 1 3 1 900
+preplace netloc href_0_1 1 0 6 NJ 1270 210J 1290 NJ 1290 NJ 1290 NJ 1290 1740J
+preplace netloc mdm_1_debug_sys_rst 1 1 3 240 1700 NJ 1700 870
+preplace netloc packetizer_0_addr 1 7 1 N
+preplace netloc ov7670_controller_0_reset 1 12 1 NJ
+preplace netloc PmodDHB1_0_Pmod_out 1 6 7 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ
+preplace netloc AccelerometerCtl_0_MOSI 1 11 2 NJ 2140 NJ
+preplace netloc ov7670_controller_0_sioc 1 12 1 NJ
+preplace netloc axi_uartlite_0_UART 1 6 7 NJ 1580 NJ 1580 NJ 1580 NJ 1580 NJ 1580 NJ 1580 NJ
+preplace netloc microblaze_0_Clk 1 1 11 NJ 1500 590 1310 890 1400 1410 500 1790 1510 2170 1340 2530 1280 NJ 1280 NJ 1280 3260 1800 N
+preplace netloc i_0_1 1 0 11 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ
+preplace netloc axi_ethernetlite_0_MDIO 1 8 5 NJ 1660 NJ 1660 NJ 1660 NJ 1660 NJ
+preplace netloc pclk_0_1 1 0 8 10J 470 NJ 470 NJ 470 NJ 470 NJ 470 1800 1500 2190J 1380 2560
+preplace netloc packetizer_1_axi 1 7 1 2510
+preplace netloc axi_ethernetlite_0_MII 1 8 1 2840
+preplace netloc Jd_PWM_1 1 0 6 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 1850
+preplace netloc Net 1 12 1 NJ
+preplace netloc microblaze_0_axi_periph_M11_AXI 1 5 1 1730
+preplace netloc clk_wiz_1_locked 1 1 3 200 1720 NJ 1720 NJ
+preplace netloc microblaze_0_axi_periph_M10_AXI 1 5 1 1780
+preplace netloc microblaze_0_axi_periph_M09_AXI 1 5 1 1730
+preplace netloc microblaze_0_debug 1 3 1 870
+preplace netloc microblaze_0_axi_dp 1 4 1 1400
+preplace netloc Net3 1 11 2 3620J 1960 3910J
+preplace netloc ov7670_controller_0_pwdn 1 12 1 NJ
+preplace netloc Net4 1 11 2 3600J 1970 NJ
+preplace netloc ov7670_controller_0_xclk 1 12 1 NJ
+preplace netloc TempSensorCtl_0_RDY_O 1 11 1 3590
+preplace netloc microblaze_0_axi_periph_M06_AXI 1 5 1 1780
+preplace netloc clk_wiz_1_clk_out2 1 1 12 220 1280 NJ 1280 NJ 1280 NJ 1280 1750J 1320 2130J 1290 NJ 1290 2850 1820 NJ 1820 3250 2300 3610 2250 NJ
+preplace netloc ov7670_capture_0_addr 1 6 2 2130J 1350 2580
+preplace netloc Not_1bit_0_o 1 10 1 3240
+preplace netloc AccelerometerCtl_0_SS 1 11 2 NJ 2160 NJ
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 N
+preplace netloc TempSensorCtl_0_TEMP_O 1 6 6 N 710 NJ 710 NJ 710 NJ 710 NJ 710 3580
+preplace netloc axi_gpio_4_gpio_io_o 1 6 1 2160
+preplace netloc axi_uartlite_0_interrupt 1 1 6 230 1840 NJ 1840 NJ 1840 NJ 1840 NJ 1840 2130
+preplace netloc axi_gpio_1_GPIO 1 6 7 NJ 1100 NJ 1100 NJ 1100 NJ 1100 NJ 1100 NJ 1100 NJ
+preplace netloc clk_100MHz_1 1 0 1 NJ
+preplace netloc debounce_camera_0_o 1 11 1 N
+preplace netloc microblaze_0_axi_periph_M07_AXI 1 5 1 1810
+preplace netloc ov7670_controller_0_config_finished 1 12 1 NJ
+preplace netloc blk_mem_gen_0_doutb 1 7 1 2520
+preplace netloc microblaze_0_intr 1 2 1 NJ
+preplace netloc reset_1 1 0 4 10 1440 210 1710 NJ 1710 890J
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 5 1 N
+preplace netloc AccelerometerCtl_0_ACCEL_Y_OUT 1 11 1 3640
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 7 600 1020 NJ 1020 1380 480 1830 1670 2200 1670 2500 1740 N
+levelinfo -pg 1 -10 110 420 740 1140 1570 1990 2360 2720 2970 3160 3420 3770 3930 -top 0 -bot 2470
+"
+}
+{
+   "da_axi4_cnt":"26",
+   "da_board_cnt":"12",
+   "da_bram_cntlr_cnt":"1",
+   "da_clkrst_cnt":"1",
+   "da_mb_cnt":"2"
+}

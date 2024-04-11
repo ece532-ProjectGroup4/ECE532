@@ -1,0 +1,26 @@
+23:09:09 **** Build of configuration Debug for project JOSH_LPTEST ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../JOSH_LPTEST_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../JOSH_LPTEST_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: JOSH_LPTEST.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../JOSH_LPTEST_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "JOSH_LPTEST.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: JOSH_LPTEST.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size JOSH_LPTEST.elf  |tee "JOSH_LPTEST.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6624	    316	   3140	  10080	   2760	JOSH_LPTEST.elf
+'Finished building: JOSH_LPTEST.elf.size'
+' '
+
+23:09:11 Build Finished (took 1s.526ms)
+

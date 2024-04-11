@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/ECE532/test_gyro/test_gyro.srcs/constrs_1/new/gyroTest.xdc rfile:../../../test_gyro.srcs/constrs_1/new/gyroTest.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H2    IOSTANDARD LVCMOS33 } [get_ports { iic_0_scl }]; #IO_L15P_T2_DQS_35 Sch=jd[7]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G4    IOSTANDARD LVCMOS33 } [get_ports { iic_0_sda }]; #IO_L20P_T3_35 Sch=jd[8]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G2    IOSTANDARD LVCMOS33 } [get_ports { iic2intc_irpt_0 }]; #IO_L15N_T2_DQS_35 Sch=jd[9]

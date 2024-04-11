@@ -1,0 +1,507 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr  2 18:10:44 2024
+# Process ID: 26928
+# Current directory: C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/impl_1
+# Command line: vivado.exe -log rx_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rx_wrapper.tcl -notrace
+# Log file: C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/impl_1/rx_wrapper.vdi
+# Journal file: C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source rx_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 397.656 ; gain = 73.551
+Command: link_design -top rx_wrapper -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_axi_ethernetlite_0_0/rx_axi_ethernetlite_0_0.dcp' for cell 'rx_i/axi_ethernetlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_blk_mem_gen_0_0/rx_blk_mem_gen_0_0.dcp' for cell 'rx_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0.dcp' for cell 'rx_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_depacketizer_0_0/rx_depacketizer_0_0.dcp' for cell 'rx_i/depacketizer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_ila_0_0/rx_ila_0_0.dcp' for cell 'rx_i/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_mii_to_rmii_0_0/rx_mii_to_rmii_0_0.dcp' for cell 'rx_i/mii_to_rmii_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_ov7670_vga_0_0/rx_ov7670_vga_0_0.dcp' for cell 'rx_i/ov7670_vga_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_proc_sys_reset_0_0/rx_proc_sys_reset_0_0.dcp' for cell 'rx_i/proc_sys_reset_0'
+INFO: [Netlist 29-17] Analyzing 493 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. rx_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. rx_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'rx_i/axi_ethernetlite_0/phy_rx_clk' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'rx_i/axi_ethernetlite_0/phy_tx_clk' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Chipscope 16-324] Core: rx_i/ila_0 UUID: e5f4ab6b-d547-512c-9504-46101bda2964 
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0_board.xdc] for cell 'rx_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0_board.xdc] for cell 'rx_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0.xdc] for cell 'rx_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1338.926 ; gain = 560.395
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0.xdc] for cell 'rx_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_proc_sys_reset_0_0/rx_proc_sys_reset_0_0_board.xdc] for cell 'rx_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_proc_sys_reset_0_0/rx_proc_sys_reset_0_0_board.xdc] for cell 'rx_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_proc_sys_reset_0_0/rx_proc_sys_reset_0_0.xdc] for cell 'rx_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_proc_sys_reset_0_0/rx_proc_sys_reset_0_0.xdc] for cell 'rx_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_axi_ethernetlite_0_0/rx_axi_ethernetlite_0_0_board.xdc] for cell 'rx_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_axi_ethernetlite_0_0/rx_axi_ethernetlite_0_0_board.xdc] for cell 'rx_i/axi_ethernetlite_0/U0'
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_axi_ethernetlite_0_0/rx_axi_ethernetlite_0_0.xdc] for cell 'rx_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_axi_ethernetlite_0_0/rx_axi_ethernetlite_0_0.xdc] for cell 'rx_i/axi_ethernetlite_0/U0'
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_mii_to_rmii_0_0/rx_mii_to_rmii_0_0_board.xdc] for cell 'rx_i/mii_to_rmii_0/U0'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_mii_to_rmii_0_0/rx_mii_to_rmii_0_0_board.xdc] for cell 'rx_i/mii_to_rmii_0/U0'
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'rx_i/ila_0/inst'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'rx_i/ila_0/inst'
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'rx_i/ila_0/inst'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'rx_i/ila_0/inst'
+Parsing XDC File [C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-507] No nets matched 'pclk_0_IBUF'. [C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/constrs_1/new/constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/constrs_1/new/constraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/constrs_1/new/constraints.xdc]
+Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_axi_ethernetlite_0_0/rx_axi_ethernetlite_0_0_clocks.xdc] for cell 'rx_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [c:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/sources_1/bd/rx/ip/rx_axi_ethernetlite_0_0/rx_axi_ethernetlite_0_0_clocks.xdc] for cell 'rx_i/axi_ethernetlite_0/U0'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance.xpm_fifo_async_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_2'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_2'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_1'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'rx_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_1'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1340.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 151 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 144 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  RAM16X1S => RAM32X1S (RAMS32): 4 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+21 Infos, 5 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:43 . Memory (MB): peak = 1340.242 ; gain = 942.586
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1340.242 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1680b3eb3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.617 . Memory (MB): peak = 1340.242 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "df7406f378629456".
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1418.004 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1819eaed8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1418.004 ; gain = 15.262
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1b5a69e4a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1418.004 ; gain = 15.262
+INFO: [Opt 31-389] Phase Retarget created 29 cells and removed 45 cells
+INFO: [Opt 31-1021] In phase Retarget, 189 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 14ac0a648
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1418.004 ; gain = 15.262
+INFO: [Opt 31-389] Phase Constant propagation created 62 cells and removed 645 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 167 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 2182167ee
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1418.004 ; gain = 15.262
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 658 cells
+INFO: [Opt 31-1021] In phase Sweep, 974 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG rx_i/clk_wiz_0/inst/clk_out1_rx_clk_wiz_0_0_BUFG_inst to drive 0 load(s) on clock net rx_i/clk_wiz_0/inst/clk_out1_rx_clk_wiz_0_0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 5 BUFG optimization | Checksum: 16001e5f8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1418.004 ; gain = 15.262
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: 21e99b1ed
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 1418.004 ; gain = 15.262
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 1b44835d2
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 1418.004 ; gain = 15.262
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 10 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 63 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              29  |              45  |                                            189  |
+|  Constant propagation         |              62  |             645  |                                            167  |
+|  Sweep                        |               0  |             658  |                                            974  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |              10  |                                             63  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1418.004 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 17333677f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 1418.004 ; gain = 15.262
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.157 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 8 newly gated: 2 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 1b49c8e87
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 1670.656 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1b49c8e87
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1670.656 ; gain = 252.652
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1b49c8e87
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1670.656 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1e8c3bfd2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1670.656 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 5 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:31 . Memory (MB): peak = 1670.656 ; gain = 330.414
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1670.656 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1670.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1670.656 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/impl_1/rx_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file rx_wrapper_drc_opted.rpt -pb rx_wrapper_drc_opted.pb -rpx rx_wrapper_drc_opted.rpx
+Command: report_drc -file rx_wrapper_drc_opted.rpt -pb rx_wrapper_drc_opted.pb -rpx rx_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.runs/impl_1/rx_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: read_checkpoint -auto_incremental -incremental C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/utils_1/imports/impl_1/rx_wrapper_routed.dcp
+
+Starting Incremental read checkpoint Task
+
+Phase 1 Process Reference Checkpoint Netlist
+INFO: [Netlist 29-17] Analyzing 494 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Phase 2 Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1670.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Phase 3 Replay Physical Synthesis Transforms
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Vivado_Tcl 4-521] iPhys_opt_design summary: tried 0 changes and 0 changes are successfully applied
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Phase 4 Build Reuse DB
+Reading placer database...
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1670.656 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1670.656 ; gain = 0.000
+INFO: [Designutils 20-2297] Reference Design: C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/utils_1/imports/impl_1/rx_wrapper_routed.dcp, Summary | WNS = 0.327 | WHS = 0.057 | State = POST_ROUTE |
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Phase 5 Checking legality
+Phase 5 Checking legality | Checksum: 1b63b014f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Phase 6 Reporting
+
+Incremental Implementation Information
+
+Table of Contents
+-----------------
+1. Reuse Summary
+2. Reference Checkpoint Information
+3. Comparison with Reference Run
+4. Non Reuse Information
+
+1. Reuse Summary
+----------------
+
++-------+----------------------+--------------------+--------------------+-------+
+|  Type | Matched % (of Total) | Reuse % (of Total) | Fixed % (of Total) | Total |
++-------+----------------------+--------------------+--------------------+-------+
+| Cells |                99.92 |              99.92 |               0.21 |  7105 |
+| Nets  |                99.83 |              99.68 |               0.00 |  5398 |
+| Pins  |                    - |              99.90 |                  - | 24630 |
+| Ports |                96.29 |              96.29 |              55.55 |    27 |
++-------+----------------------+--------------------+--------------------+-------+
+
+
+2. Reference Checkpoint Information
+-----------------------------------
+
++----------------+------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/utils_1/imports/impl_1/rx_wrapper_routed.dcp |
++----------------+------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+----------------------------+
+|         DCP Information        |            Value           |
++--------------------------------+----------------------------+
+| Vivado Version                 |                    v2018.3 |
+| DCP State                      |                 POST_ROUTE |
+| Recorded WNS                   |                      0.327 |
+| Recorded WHS                   |                      0.057 |
+| Reference Speed File Version   | PRODUCTION 1.23 2018-06-13 |
+| Incremental Speed File Version | PRODUCTION 1.23 2018-06-13 |
++--------------------------------+----------------------------+
+* Recorded WNS/WHS timing numbers are estimated timing numbers. They may vary slightly from sign-off timing numbers.
+
+
+3. Comparison with Reference Run
+--------------------------------
+
++-----------------+---------------------------+---------------------------+---------------------------+
+|                 |          WNS(ns)          |  Runtime(elapsed)(hh:mm)  |    Runtime(cpu)(hh:mm)    |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|      Stage      |  Reference  | Incremental |  Reference  | Incremental |  Reference  | Incremental |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+| synth_design    |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| read_checkpoint |             |             |     < 1 min |             |     < 1 min |             |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+4. Non Reuse Information
+------------------------
+
++-----------------------+------+
+|          Type         |   %  |
++-----------------------+------+
+| Non-Reused Cells      | 0.07 |
+|   New                 | 0.07 |
+| Partially reused nets | 0.11 |
+| Non-Reused nets       | 0.20 |
+| Non-Reused Ports      | 3.70 |
++-----------------------+------+
+
+
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1670.656 ; gain = 0.000
+read_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1670.656 ; gain = 0.000
+INFO: [Vivado_Tcl 4-115] Reporting incremental reuse summary using design-checkpoint file 'C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/utils_1/imports/impl_1/rx_wrapper_routed.dcp'
+
+Starting Report Incremental Reuse Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1670.656 ; gain = 0.000
+report_incremental_reuse: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1670.656 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+
+Starting Incremental Placer Task
+INFO: [Vivado_Tcl 4-24] Running Incremental Placer flow for unplaced cells using reference design-checkpoint 'C:/Users/jpzjo/Downloads/newstream/newstream/rx/rx.srcs/utils_1/imports/impl_1/rx_wrapper_routed.dcp'.
+INFO: [Place 46-42] Incremental Compile is being run in High Reuse Mode.
+INFO: [Place 46-44] place_design is using directive Default with target WNS of 0 ns.
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1670.656 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1b63b014f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1670.656 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN2.DVD_FF'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN2.RER_FF'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN2.TEN_FF'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN[0].RX_FF_I'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN[0].TX_FF_I'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN[1].RX_FF_I'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN[1].TX_FF_I'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN[2].RX_FF_I'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN[2].TX_FF_I'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN[3].RX_FF_I'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'rx_i/axi_ethernetlite_0/U0/IOFFS_GEN[3].TX_FF_I'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+ERROR: [Place 30-372] Bank 15 has terminals with incompatible standards:
+Incompatible Pair of IO Standards: (OUT of IO Standard LVCMOS33) & (IN of IO Standard LVCMOS18) have incompatible Vccs
+ The following  terminals correspond to these IO Standards:
+SioStd: LVCMOS33   VCCO = 3.3 Termination: 0  TermDir:  Out  Bank: 15 Drv: 12 Placed :
+	Term: vga_hsync_0
+	Term: vga_vsync_0
+SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   Bank: 15 Placed :
+	Term: reset
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 14 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 15 |    50 |     3 | LVCMOS33(2)  LVCMOS18(1)                                               |                                          |        |  +1.80 |    YES |     |
+| 16 |    10 |     9 | LVCMOS18(9)                                                            |                                          |        |  +1.80 |    YES |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |    14 | LVCMOS33(13)  LVCMOS18(1)                                              |                                          |        |  +1.80 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   210 |    26 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 15     | reset                | LVCMOS18        | IOB_X0Y144           | C12                  |                      |
+|        | vga_hsync_0          | LVCMOS33        | IOB_X0Y142           | B11                  |                      |
+|        | vga_vsync_0          | LVCMOS33        | IOB_X0Y143           | B12                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 16     | eth_mdio_mdc_mdc     | LVCMOS18        | IOB_X0Y178           | C9                   |                      |
+|        | eth_mdio_mdc_mdio_io | LVCMOS18        | IOB_X0Y171           | A9                   |                      |
+|        | eth_rmii_crs_dv      | LVCMOS18        | IOB_X0Y187           | D9                   | *                    |
+|        | eth_rmii_rx_er       | LVCMOS18        | IOB_X0Y173           | C10                  |                      |
+|        | eth_rmii_rxd[0]      | LVCMOS18        | IOB_X0Y174           | C11                  |                      |
+|        | eth_rmii_rxd[1]      | LVCMOS18        | IOB_X0Y161           | D10                  | *                    |
+|        | eth_rmii_tx_en       | LVCMOS18        | IOB_X0Y177           | B9                   |                      |
+|        | eth_rmii_txd[0]      | LVCMOS18        | IOB_X0Y172           | A10                  |                      |
+|        | eth_rmii_txd[1]      | LVCMOS18        | IOB_X0Y175           | A8                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | ETH_REFCLK           | LVCMOS33        | IOB_X1Y128           | D5                   |                      |
+|        | sys_clock            | LVCMOS18        | IOB_X1Y126           | E3                   |                      |
+|        | vga_blue_0[0]        | LVCMOS33        | IOB_X1Y146           | B7                   |                      |
+|        | vga_blue_0[1]        | LVCMOS33        | IOB_X1Y141           | C7                   |                      |
+|        | vga_blue_0[2]        | LVCMOS33        | IOB_X1Y137           | D7                   | *                    |
+|        | vga_blue_0[3]        | LVCMOS33        | IOB_X1Y142           | D8                   |                      |
+|        | vga_green_0[0]       | LVCMOS33        | IOB_X1Y148           | C6                   |                      |
+|        | vga_green_0[1]       | LVCMOS33        | IOB_X1Y143           | A5                   |                      |
+|        | vga_green_0[2]       | LVCMOS33        | IOB_X1Y145           | B6                   |                      |
+|        | vga_green_0[3]       | LVCMOS33        | IOB_X1Y144           | A6                   |                      |
+|        | vga_red_0[0]         | LVCMOS33        | IOB_X1Y133           | A3                   |                      |
+|        | vga_red_0[1]         | LVCMOS33        | IOB_X1Y135           | B4                   |                      |
+|        | vga_red_0[2]         | LVCMOS33        | IOB_X1Y147           | C5                   |                      |
+|        | vga_red_0[3]         | LVCMOS33        | IOB_X1Y134           | A4                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+ERROR: [Place 30-575] Sub-optimal placement for a clock-capable IO pin and MMCM pair. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets rx_i/clk_wiz_0/inst/clk_in1_rx_clk_wiz_0_0] >
+
+	rx_i/clk_wiz_0/inst/clkin1_ibufg (IBUF.O) is provisionally placed by clockplacer on IOB_X1Y99
+	rx_i/clk_wiz_0/inst/mmcm_adv_inst (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_mmcm_bufg
+	Status: PASS 
+	Rule Description: An MMCM driving a BUFG must be placed on the same half side (top/bottom) of the device
+	rx_i/clk_wiz_0/inst/mmcm_adv_inst (MMCME2_ADV.CLKFBOUT) is provisionally placed by clockplacer on MMCME2_ADV_X1Y2
+	rx_i/clk_wiz_0/inst/clkf_buf (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y19
+
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 18f71126d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1670.656 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 18f71126d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1670.656 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Incremental Placer Task | Checksum: 1b63b014f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1670.656 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+74 Infos, 5 Warnings, 12 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 18:12:29 2024...

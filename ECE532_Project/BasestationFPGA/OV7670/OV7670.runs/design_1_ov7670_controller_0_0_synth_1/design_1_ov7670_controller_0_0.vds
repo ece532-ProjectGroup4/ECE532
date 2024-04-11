@@ -1,0 +1,356 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar  5 12:35:43 2024
+# Process ID: 491372
+# Current directory: /home/rozmarco/Documents/ECE532/OV7670/OV7670.runs/design_1_ov7670_controller_0_0_synth_1
+# Command line: vivado -log design_1_ov7670_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ov7670_controller_0_0.tcl
+# Log file: /home/rozmarco/Documents/ECE532/OV7670/OV7670.runs/design_1_ov7670_controller_0_0_synth_1/design_1_ov7670_controller_0_0.vds
+# Journal file: /home/rozmarco/Documents/ECE532/OV7670/OV7670.runs/design_1_ov7670_controller_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_ov7670_controller_0_0.tcl -notrace
+Command: synth_design -top design_1_ov7670_controller_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 491420 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1445.648 ; gain = 90.934 ; free physical = 661 ; free virtual = 2318
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_controller_0_0' [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_ov7670_controller_0_0/synth/design_1_ov7670_controller_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/ov7670_controller.vhd:23]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at '/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/ov7670_controller.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/i2c_sender.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (1#1) [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/i2c_sender.vhd:24]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at '/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/ov7670_registers.vhd:27' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/ov7670_controller.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/ov7670_registers.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (2#1) [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/ov7670_registers.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (3#1) [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/new/ov7670_controller.vhd:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_controller_0_0' (4#1) [/home/rozmarco/Documents/ECE532/OV7670/OV7670.srcs/sources_1/bd/design_1/ip/design_1_ov7670_controller_0_0/synth/design_1_ov7670_controller_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1490.398 ; gain = 135.684 ; free physical = 665 ; free virtual = 2321
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1490.398 ; gain = 135.684 ; free physical = 666 ; free virtual = 2323
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1490.398 ; gain = 135.684 ; free physical = 666 ; free virtual = 2323
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1832.246 ; gain = 0.000 ; free physical = 420 ; free virtual = 2076
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1832.246 ; gain = 0.000 ; free physical = 420 ; free virtual = 2076
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1834.246 ; gain = 2.000 ; free physical = 422 ; free virtual = 2078
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 482 ; free virtual = 2139
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 482 ; free virtual = 2139
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 484 ; free virtual = 2141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_sr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "divider" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "finished" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register address_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 480 ; free virtual = 2137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module i2c_sender 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module ov7670_registers 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ov7670_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "inst/Inst_i2c_sender/divider" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/Inst_i2c_sender/taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/Inst_ov7670_registers/finished" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register inst/Inst_ov7670_registers/address_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-3917] design design_1_ov7670_controller_0_0 has port reset driven by constant 1
+INFO: [Synth 8-3917] design design_1_ov7670_controller_0_0 has port pwdn driven by constant 0
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/Inst_i2c_sender/data_sr_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 465 ; free virtual = 2124
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------------+-------------------------------------+---------------+----------------+
+|Module Name                    | RTL Object                          | Depth x Width | Implemented As | 
++-------------------------------+-------------------------------------+---------------+----------------+
+|design_1_ov7670_controller_0_0 | inst/Inst_ov7670_registers/sreg_reg | 256x16        | Block RAM      | 
++-------------------------------+-------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance insti_1/inst/Inst_ov7670_registers/sreg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 340 ; free virtual = 1999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 340 ; free virtual = 1998
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/Inst_ov7670_registers/sreg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 338 ; free virtual = 1997
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 335 ; free virtual = 1994
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 335 ; free virtual = 1994
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 335 ; free virtual = 1994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 335 ; free virtual = 1994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 335 ; free virtual = 1994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 335 ; free virtual = 1994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     3|
+|2     |LUT2     |    40|
+|3     |LUT3     |    22|
+|4     |LUT4     |     8|
+|5     |LUT5     |     4|
+|6     |LUT6     |    10|
+|7     |RAMB18E1 |     1|
+|8     |FDRE     |    59|
+|9     |FDSE     |    31|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------+------------------+------+
+|      |Instance                  |Module            |Cells |
++------+--------------------------+------------------+------+
+|1     |top                       |                  |   178|
+|2     |  inst                    |ov7670_controller |   178|
+|3     |    Inst_i2c_sender       |i2c_sender        |   142|
+|4     |    Inst_ov7670_registers |ov7670_registers  |    34|
++------+--------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 335 ; free virtual = 1994
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1834.246 ; gain = 135.684 ; free physical = 390 ; free virtual = 2049
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.246 ; gain = 479.531 ; free physical = 390 ; free virtual = 2049
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.254 ; gain = 0.000 ; free physical = 330 ; free virtual = 1989
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.254 ; gain = 501.059 ; free physical = 380 ; free virtual = 2039
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.254 ; gain = 0.000 ; free physical = 380 ; free virtual = 2039
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/rozmarco/Documents/ECE532/OV7670/OV7670.runs/design_1_ov7670_controller_0_0_synth_1/design_1_ov7670_controller_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.266 ; gain = 0.000 ; free physical = 372 ; free virtual = 2032
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/rozmarco/Documents/ECE532/OV7670/OV7670.runs/design_1_ov7670_controller_0_0_synth_1/design_1_ov7670_controller_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_ov7670_controller_0_0_utilization_synth.rpt -pb design_1_ov7670_controller_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  5 12:36:09 2024...

@@ -1,0 +1,117 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto eaa01a2a9b0a4143aa76552d9fa8ac28 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L axi_lite_ipif_v3_0_4 -L blk_mem_gen_v8_4_2 -L lib_bmg_v1_0_11 -L fifo_generator_v13_2_3 -L lib_fifo_v1_0_12 -L axi_ethernetlite_v3_0_16 -L mii_to_rmii_v2_0_20 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package axi_ethernetlite_v3_0_16.mac_pkg
+Compiling package unisim.vcomponents
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xpm.vcomponents
+Compiling module unisims_ver.IOBUF
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=1,c_mtb...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=1)\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.mdio_if [mdio_if_default]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture fds_v of entity unisim.FDS [fds_default]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.rx_statemachine [rx_statemachine_default]
+Compiling module xpm.xpm_cdc_sync_rst(DEST_SYNC_FF=2,...
+Compiling module xpm.xpm_fifo_rst(COMMON_CLOCK=0)
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=5...
+Compiling module xpm.xpm_counter_updn(RESET_VALUE=1)
+Compiling module xpm.xpm_counter_updn(RESET_VALUE=2)
+Compiling module xpm.xpm_counter_updn(RESET_VALUE=3)
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=2,INIT...
+Compiling module xpm.xpm_fifo_reg_vec
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=2,INIT...
+Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=5)
+Compiling module xpm.xpm_fifo_base(COMMON_CLOCK=0,FIF...
+Compiling module xpm.xpm_fifo_async(FIFO_MEMORY_TYPE=...
+Compiling architecture implementation of entity lib_fifo_v1_0_12.async_fifo_fg [\async_fifo_fg(c_family="artix7"...]
+Compiling architecture implementation of entity axi_ethernetlite_v3_0_16.rx_intrfce [\rx_intrfce(c_family="artix7")(1...]
+Compiling architecture arch1 of entity axi_ethernetlite_v3_0_16.crcgenrx [crcgenrx_default]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.receive [\receive(c_family="artix7")(1,6)...]
+Compiling architecture implementation of entity axi_ethernetlite_v3_0_16.crcnibshiftreg [crcnibshiftreg_default]
+Compiling architecture arch1 of entity axi_ethernetlite_v3_0_16.crcgentx [crcgentx_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=1,c_mtb...]
+Compiling architecture implementation of entity axi_ethernetlite_v3_0_16.tx_intrfce [\tx_intrfce(c_family="artix7")(1...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.mux_onehot_f [\mux_onehot_f(c_dw=4,c_nb=6,c_fa...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.ld_arith_reg [\ld_arith_reg(c_reg_width=12,c_r...]
+Compiling architecture implementation of entity axi_ethernetlite_v3_0_16.cntr5bit [cntr5bit_default]
+Compiling architecture implementation of entity axi_ethernetlite_v3_0_16.tx_statemachine [tx_statemachine_default]
+Compiling architecture implementation of entity axi_ethernetlite_v3_0_16.defer_state [defer_state_default]
+Compiling architecture implementation of entity axi_ethernetlite_v3_0_16.deferral [deferral_default]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.ld_arith_reg [\ld_arith_reg(c_add_sub_not=true...]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.ld_arith_reg [\ld_arith_reg(c_reg_width=4,c_re...]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.transmit [\transmit(c_family="artix7")(1,6...]
+Compiling architecture ram32x1s_v of entity unisim.RAM32X1S [\RAM32X1S(init="0000000000000000...]
+Compiling architecture ram16x1s_v of entity unisim.RAM16X1S [\RAM16X1S(init="0000001000100000...]
+Compiling architecture ram32x1s_v of entity unisim.RAM32X1S [\RAM32X1S(init="0000000000000000...]
+Compiling architecture ram16x1s_v of entity unisim.RAM16X1S [\RAM16X1S(init="0000011100010000...]
+Compiling architecture ram32x1s_v of entity unisim.RAM32X1S [\RAM32X1S(init="0000000000000000...]
+Compiling architecture ram16x1s_v of entity unisim.RAM16X1S [\RAM16X1S(init="0000111000110000...]
+Compiling architecture ram32x1s_v of entity unisim.RAM32X1S [\RAM32X1S(init="0000000000000000...]
+Compiling architecture ram16x1s_v of entity unisim.RAM16X1S [\RAM16X1S(init="0000111100010000...]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.ram16x4 [\ram16x4(init_01="11100101000000...]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.MacAddrRAM [\MacAddrRAM(macaddr="00000000000...]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.emac [\emac(c_family="artix7")(0,47)(1...]
+Compiling module xpm.xpm_memory_base(MEMORY_SIZE=8192...
+Compiling module xpm.xpm_memory_tdpram(MEMORY_SIZE=81...
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.emac_dpram [\emac_dpram(c_family="artix7")(1...]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.xemac [\xemac(c_family="artix7",c_s_axi...]
+Compiling architecture rtl of entity axi_ethernetlite_v3_0_16.axi_interface [\axi_interface(c_family="artix7"...]
+Compiling architecture imp of entity axi_ethernetlite_v3_0_16.axi_ethernetlite [\axi_ethernetlite(c_family="arti...]
+Compiling architecture rx_axi_ethernetlite_0_0_arch of entity xil_defaultlib.rx_axi_ethernetlite_0_0 [rx_axi_ethernetlite_0_0_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.rx_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.rx_clk_wiz_0_0
+Compiling module xil_defaultlib.depacketizer
+Compiling module xil_defaultlib.rx_depacketizer_0_0
+Compiling module xil_defaultlib.rx_ila_0_0
+Compiling architecture simulation of entity mii_to_rmii_v2_0_20.rmii_tx_fixed [rmii_tx_fixed_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture imp of entity mii_to_rmii_v2_0_20.SRL_FIFO [\SRL_FIFO(c_data_bits=5)\]
+Compiling architecture simulation of entity mii_to_rmii_v2_0_20.rmii_rx_fixed [rmii_rx_fixed_default]
+Compiling architecture simulation of entity mii_to_rmii_v2_0_20.mii_to_rmii [\mii_to_rmii(c_instance="rx_mii_...]
+Compiling architecture rx_mii_to_rmii_0_0_arch of entity xil_defaultlib.rx_mii_to_rmii_0_0 [rx_mii_to_rmii_0_0_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture rx_proc_sys_reset_0_0_arch of entity xil_defaultlib.rx_proc_sys_reset_0_0 [rx_proc_sys_reset_0_0_default]
+Compiling module xil_defaultlib.rx
+Compiling module xil_defaultlib.rx_wrapper
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

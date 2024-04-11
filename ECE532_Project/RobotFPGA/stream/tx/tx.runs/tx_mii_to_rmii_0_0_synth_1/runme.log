@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log tx_mii_to_rmii_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tx_mii_to_rmii_0_0.tcl
+

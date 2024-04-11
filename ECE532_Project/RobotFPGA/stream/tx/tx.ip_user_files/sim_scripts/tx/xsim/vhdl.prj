@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../../tx.srcs/sources_1/bd/tx/ip/tx_axi_ethernetlite_0_0/sim/tx_axi_ethernetlite_0_0.vhd" \
+"../../../../tx.srcs/sources_1/bd/tx/ip/tx_mii_to_rmii_0_0/sim/tx_mii_to_rmii_0_0.vhd" \
+"../../../../tx.srcs/sources_1/bd/tx/ip/tx_proc_sys_reset_0_0/sim/tx_proc_sys_reset_0_0.vhd" \
+
+nosort

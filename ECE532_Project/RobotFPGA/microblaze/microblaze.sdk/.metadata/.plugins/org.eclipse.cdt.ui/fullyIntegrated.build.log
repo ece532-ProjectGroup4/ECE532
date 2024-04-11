@@ -1,0 +1,25 @@
+00:28:15 **** Auto Build of configuration Debug for project fullyIntegrated ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../fullyIntegrated_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:122:9: warning: unused variable 'acc' [-Wunused-variable]
+     int acc;
+         ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: fullyIntegrated.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../fullyIntegrated_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "fullyIntegrated.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fullyIntegrated.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size fullyIntegrated.elf  |tee "fullyIntegrated.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27272	    328	   3120	  30720	   7800	fullyIntegrated.elf
+'Finished building: fullyIntegrated.elf.size'
+' '
+
+00:28:19 Build Finished (took 4s.493ms)
+

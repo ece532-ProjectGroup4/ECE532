@@ -1,0 +1,68 @@
+vhdl xil_defaultlib  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_microblaze_0_0/sim/microblaze_microblaze_0_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_dlmb_v10_1/sim/microblaze_dlmb_v10_1.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_ilmb_v10_1/sim/microblaze_ilmb_v10_1.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_dlmb_bram_if_cntlr_1/sim/microblaze_dlmb_bram_if_cntlr_1.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_ilmb_bram_if_cntlr_1/sim/microblaze_ilmb_bram_if_cntlr_1.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_microblaze_0_axi_intc_0/sim/microblaze_microblaze_0_axi_intc_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_mdm_1_1/sim/microblaze_mdm_1_1.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_rst_clk_wiz_1_100M_1/sim/microblaze_rst_clk_wiz_1_100M_1.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_axi_uartlite_0_0/sim/microblaze_axi_uartlite_0_0.vhd" \
+
+vhdl xbip_utils_v3_0_9  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/0da8/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vhdl axi_utils_v2_0_5  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/ec8e/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+
+vhdl c_reg_fd_v12_0_5  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/cbdd/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_wrapper_v3_0_4  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/cdbf/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_pipe_v3_0_5  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_addsub_v3_0_5  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/a04b/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_addsub_v3_0_5  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/87fb/hdl/xbip_addsub_v3_0_vh_rfs.vhd" \
+
+vhdl c_addsub_v12_0_12  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/6b5f/hdl/c_addsub_v12_0_vh_rfs.vhd" \
+
+vhdl c_mux_bit_v12_0_5  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/512a/hdl/c_mux_bit_v12_0_vh_rfs.vhd" \
+
+vhdl c_shift_ram_v12_0_12  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/a9d0/hdl/c_shift_ram_v12_0_vh_rfs.vhd" \
+
+vhdl xbip_bram18k_v3_0_5  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/c08f/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vhdl mult_gen_v12_0_14  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/6bb5/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vhdl cmpy_v6_0_16  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/6f3d/hdl/cmpy_v6_0_vh_rfs.vhd" \
+
+vhdl floating_point_v7_0_15  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/a054/hdl/floating_point_v7_0_vh_rfs.vhd" \
+
+vhdl xfft_v9_1_1  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ipshared/60b9/hdl/xfft_v9_1_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/ECE532/audio_project/audio_project.srcs/sources_1/bd/design_1/ip/design_1_xfft_0_0/sim/design_1_xfft_0_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_PmodDHB1_0_0/src/PmodDHB1_axi_gpio_0_0/sim/PmodDHB1_axi_gpio_0_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_axi_ethernetlite_0_0/sim/microblaze_axi_ethernetlite_0_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_mii_to_rmii_0_0/sim/microblaze_mii_to_rmii_0_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_axi_gpio_0_0/sim/microblaze_axi_gpio_0_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_rst_clk_wiz_1_100M_1_0/sim/microblaze_rst_clk_wiz_1_100M_1_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_axi_gpio_1_0/sim/microblaze_axi_gpio_1_0.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_axi_gpio_2_1/sim/microblaze_axi_gpio_2_1.vhd" \
+"../../../../microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_axi_gpio_3_0/sim/microblaze_axi_gpio_3_0.vhd" \
+
+nosort

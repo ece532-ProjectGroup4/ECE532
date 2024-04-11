@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../rx.srcs/sources_1/bd/rx/ipshared/85a3" \
+"../../../../../depacketizer.v" \
+"../../../../rx.srcs/sources_1/bd/rx/ip/rx_depacketizer_0_0/sim/rx_depacketizer_0_0.v" \
+"../../../../rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0_clk_wiz.v" \
+"../../../../rx.srcs/sources_1/bd/rx/ip/rx_clk_wiz_0_0/rx_clk_wiz_0_0.v" \
+"../../../../rx.srcs/sources_1/bd/rx/sim/rx.v" \
+"../../../../rx.srcs/sources_1/bd/rx/ip/rx_ila_0_0/sim/rx_ila_0_0.v" \
+"../../../../rx.srcs/sources_1/bd/rx/hdl/rx_wrapper.v" \
+"../../../../rx.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

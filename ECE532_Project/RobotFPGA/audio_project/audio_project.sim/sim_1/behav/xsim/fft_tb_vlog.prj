@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../audio_project.srcs/sources_1/bd/pll/ipshared/85a3" \
+"../../../../audio_project.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../audio_project.ip_user_files/bd/pll/ip/pll_clk_wiz_0_0/pll_clk_wiz_0_0_clk_wiz.v" \
+"../../../../audio_project.ip_user_files/bd/pll/ip/pll_clk_wiz_0_0/pll_clk_wiz_0_0.v" \
+"../../../../audio_project.ip_user_files/bd/pll/sim/pll.v" \
+"../../../../audio_project.srcs/sources_1/imports/new/PDM_interface.v" \
+"../../../../audio_project.srcs/sources_1/imports/new/clock_divider.v" \
+"../../../../audio_project.srcs/sources_1/imports/new/counter.v" \
+"../../../../audio_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../audio_project.srcs/sources_1/imports/new/enable_controller.v" \
+"../../../../audio_project.srcs/sources_1/new/fft_interface.v" \
+"../../../../audio_project.srcs/sources_1/bd/pll/hdl/pll_wrapper.v" \
+"../../../../audio_project.srcs/sources_1/imports/new/sigma_delta.v" \
+"../../../../audio_project.srcs/sources_1/new/twos_complement_to_magnitude.v" \
+
+sv xil_defaultlib  --include "../../../../audio_project.srcs/sources_1/bd/pll/ipshared/85a3" \
+"../../../../audio_project.srcs/sources_1/new/audio_toplevel.v" \
+"../../../../audio_project.srcs/sources_1/imports/new/shift_reg.v" \
+"../../../../audio_project.srcs/sim_1/new/fft_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

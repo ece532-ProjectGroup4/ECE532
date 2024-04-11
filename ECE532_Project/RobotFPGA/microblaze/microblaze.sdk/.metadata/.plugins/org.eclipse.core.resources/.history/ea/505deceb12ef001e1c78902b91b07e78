@@ -1,0 +1,176 @@
+/******************************************************************************
+* Copyright (C) 2002 - 2021 Xilinx, Inc.  All rights reserved.
+* Copyright (c) 2022 - 2023 Advanced Micro Devices, Inc. All Rights Reserved.
+* SPDX-License-Identifier: MIT
+******************************************************************************/
+
+/*****************************************************************************/
+/**
+* @file xiic_low_level_tempsensor_example.c
+*
+* This file contains a polled mode design example which uses the Xilinx IIC
+* device and low-level driver to execise the temperature sensor on the ML300
+* board. This example only performs read operations (receive) from the IIC
+* temperature sensor of the platform.
+*
+* The XIic_Recv() API is used to receive the data.
+*
+* @note
+*
+* 7-bit addressing is used to access the tempsensor.
+*
+* None
+* <pre>
+* MODIFICATION HISTORY:
+*
+* Ver   Who  Date	 Changes
+* ----- ---- -------- -----------------------------------------------
+* 1.00a jhl  10/09/03 Initial Release
+* 1.00a sv   05/09/05 Minor changes to comply to Doxygen and coding guidelines
+* 1.00a mta  03/09/06 Minor updates due to changes in the low level driver for
+*			 supporting repeated start functionality.
+* 2.00a sdm  09/22/09 Minor modifications as per coding guidelines.
+* 3.10  gm   07/09/23 Added SDT support
+*
+* </pre>
+*
+*****************************************************************************/
+
+/***************************** Include Files *********************************/
+
+#include "xparameters.h"
+#include "xiic_l.h"
+#include "xil_printf.h"
+
+/************************** Constant Definitions *****************************/
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+
+#define iic_baseAddr	XPAR_AXI_IIC_1_BASEADDR
+
+/*
+ * The following constant defines the address of the IIC
+ * temperature sensor device on the IIC bus.  Note that since
+ * the address is only 7 bits, this  constant is the address divided by 2.
+ */
+#define TEMP_SENSOR_ONCHIP_ADDRESS  0x18 /* The actual address is 0x30 */
+#define TEMP_SENSOR_AMBIENT_ADDRESS 0x4B /* The actual address is 0x96 */
+
+
+
+#include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xiic.h"
+#include "xiic_l.h"
+#include "sleep.h"
+
+XIic iicInst;
+u8 WriteBuffer[24];
+
+
+
+int main()
+{
+	xil_printf("jkljlfjkads");
+    init_platform();
+    xil_printf("jkljlfjkads");
+
+//    XIic_CfgInitialize(XIic *InstancePtr, XIic_Config *Config,
+//    		       UINTPTR EffectiveAddr);
+//
+//    XIic_Start( *InstancePtr);
+//
+    u8 Index;
+    print("klafkjlfs");
+	int Status;
+	XIic_Config *ConfigPtr;	/* Pointer to configuration data */
+	u8 Address = 0x68;
+
+
+
+	WriteBuffer[0] = (u8) (Address);
+
+
+	XIic_MultiMasterInclude();
+
+
+	ConfigPtr = XIic_LookupConfig(iic_baseAddr);
+
+	if (ConfigPtr == NULL) {
+		return XST_FAILURE;
+	}
+	print("k");
+	Status = XIic_CfgInitialize(&iicInst, ConfigPtr, ConfigPtr->BaseAddress);
+	xil_printf("%d \n", ConfigPtr->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+
+
+
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+
+	/*
+	 * Set the address of the slave.
+	 */
+	Status = XIic_SetAddress(&iicInst, XII_ADDR_TO_SEND_TYPE,Address);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	iicInst.Stats.TxErrors = 0;
+	/*
+	 * Set the defaults.
+	 */
+
+	/*
+	 * Start the IIC device.
+	 */
+	Status = XIic_Start(&iicInst);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	xil_printf("0: %d \n", Status);
+	/*
+	 * Write to the EEPROM.
+	 */
+
+//	WriteBuffer[0] = 0x0;
+//	XIic_MasterSend(&iicInst, WriteBuffer, 16);
+
+	//XIic_WriteReg(0x68, 0x6B, 0x00);
+	u8 gyroBuffer[12];
+	u8* addrPtr[8];
+
+	XIic_ReadReg(TEMP_SENSOR_ONCHIP_ADDRESS, TEMP_SENSOR_AMBIENT_ADDRESS);
+
+	XIic_Send7BitAddress(iic_baseAddr, TEMP_SENSOR_ONCHIP_ADDRESS, XIIC_READ_OPERATION);
+	XIic_Send7BitAddress(iic_baseAddr, TEMP_SENSOR_AMBIENT_ADDRESS, XIIC_READ_OPERATION);
+
+	while(1) {
+
+		xil_printf("0: %d \n", XIic_ReadReg(Address, 0x47));
+		xil_printf("1: %d \n", XIic_ReadReg(Address, 0x3B));
+//		XIic_Recv(iic_baseAddr, 0x43, gyroBuffer, 12, XIIC_STOP);
+//		xil_printf("1: %d \n", gyroBuffer);
+		usleep(1000000);
+
+
+	}
+
+    print("Hello World\n\r");
+
+    cleanup_platform();
+    return 0;
+}

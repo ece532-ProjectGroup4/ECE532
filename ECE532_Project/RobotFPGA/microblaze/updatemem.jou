@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# 
+# Start of session at: Wed Feb 28 14:48:54 2024
+# Process ID: 8768
+# Current directory: c:/ECE532/microblaze
+# Command line: updatemem.exe -mode batch -source C:/DESL/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/ECE532/microblaze/microblaze.sdk/microblaze_wrapper_hw_platform_0/microblaze_wrapper.mmi -data C:/DESL/Xilinx/SDK/2018.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc microblaze_i/microblaze_0 -bit C:/ECE532/microblaze/microblaze.sdk/microblaze_wrapper_hw_platform_0/microblaze_wrapper.bit -out C:/ECE532/microblaze/microblaze.sdk/microblaze_wrapper_hw_platform_0/download.bit -force
+# Log file: c:/ECE532/microblaze/updatemem.log
+# Journal file: c:/ECE532/microblaze\updatemem.jou
+#-----------------------------------------------------------
+source C:/DESL/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace
