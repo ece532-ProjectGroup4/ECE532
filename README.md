@@ -28,5 +28,5 @@ Interface with the camera on the robot, and then display video on a VGA display 
 ECE532_Project/BasestationFPGA/OV7670/OV7670.srcs/sources_1/new and ECE532_Project/BasestationFPGA/OV7670/OV7670.srcs/sources_1/new/ov7670_vga.vhd
 
 ## Additional Contents
-The final report is found in the *doc* folder. Videos of the project are found in the *videos* folder.
+The final report and presentation are both found in the *doc* folder. Videos of the project are found in the *videos* folder.
 
